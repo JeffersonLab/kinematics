@@ -1,11 +1,13 @@
 {
   "name": "kinematics",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "homepage": "https://JeffersonLab.github.io/kinematics/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build-github": "tsc -b && vite build --base=/kinematics/",
     "lint": "eslint .",
     "preview": "vite preview"
   },

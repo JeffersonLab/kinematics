@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stage, Layer, Arrow } from 'react-konva';
 
-const DisScatteredElectron: React.FC = () => {
+const VectorsExample: React.FC = () => {
     // Example data for scattered electron vectors
     const vectors = [
         { x: 150, y: 200, angle: 30 },
@@ -35,4 +35,4 @@ const DisScatteredElectron: React.FC = () => {
     );
 };
 
-export default DisScatteredElectron;
+export default VectorsExample;

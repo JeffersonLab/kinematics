@@ -165,42 +165,42 @@ const DisVisualization: React.FC = () => {
                     alignItems: 'center',
                 }}
             >
-                <Stage width={600} height={400}>
+                <Stage width={500} height={400}>
                     <Layer>
                         {/* Proton Beam (Left to Right) */}
                         <Arrow
-                            points={[50, 200, 300, 200]}
+                            points={[0, 200, 240, 200]}
                             pointerLength={10}
                             pointerWidth={10}
                             fill="red"
                             stroke="red"
-                            strokeWidth={5 * (E_p / 275)} // Adjust width based on energy
+                            strokeWidth={5 * (E_p / 275) + 5} // Adjust width based on energy
                         />
-                        <Text text="Proton Beam" x={50} y={180} fill="red" />
+                        <Text text="Hadron" x={50} y={180} fill="red" />
 
                         {/* Electron Beam (Right to Left) */}
                         <Arrow
-                            points={[550, 200, 300, 200]}
+                            points={[500, 200, 255, 200]}
                             pointerLength={10}
                             pointerWidth={10}
                             fill="blue"
                             stroke="blue"
-                            strokeWidth={5 * (E_e / 18)} // Adjust width based on energy
+                            strokeWidth={5 * (E_e / 18) + 1} // Adjust width based on energy
                         />
                         <Text text="Electron Beam" x={450} y={180} fill="blue" />
 
                         {/* Collision Point */}
-                        <Circle x={300} y={200} radius={3} fill="black" />
+                        <Circle x={250} y={200} radius={3} fill="black" />
 
                         {/* Scattered Electron */}
                         {thetaRad !== null ? (
                             <>
                                 <Arrow
                                     points={[
-                                        300,
+                                        250,
                                         200,
-                                        300 - 100 * Math.cos(thetaRad),
-                                        200 - 100 * Math.sin(thetaRad),
+                                        250 - 150 * Math.cos(thetaRad),
+                                        200 - 150 * Math.sin(thetaRad),
                                     ]}
                                     pointerLength={10}
                                     pointerWidth={10}
@@ -210,8 +210,8 @@ const DisVisualization: React.FC = () => {
                                 />
                                 <Text
                                     text="Scattered Electron"
-                                    x={300 - 100 * Math.cos(thetaRad) + 10}
-                                    y={200 - 100 * Math.sin(thetaRad) - 10}
+                                    x={250 - 150 * Math.cos(thetaRad) + 10}
+                                    y={200 - 150 * Math.sin(thetaRad) - 15}
                                     fill="green"
                                 />
                             </>
