@@ -20,9 +20,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="1.5520994"
-     inkscape:cx="-250.30614"
-     inkscape:cy="-51.543091"
+     inkscape:zoom="12.416795"
+     inkscape:cx="84.200471"
+     inkscape:cy="65.314761"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="-11"
@@ -35,7 +35,10 @@
      height="100"
      fill="#ffffff"
      id="rect1"
-     style="fill:none;fill-opacity:1" />
+     style="fill:none;fill-opacity:1"
+     ry="1.7717937"
+     x="0"
+     y="0" />
   <!-- Electron Path (Lepton Beam) -->
   <circle
      cx="50"
