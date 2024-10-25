@@ -21,8 +21,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:zoom="1.5520994"
-     inkscape:cx="-248.37327"
-     inkscape:cy="3.2214432"
+     inkscape:cx="-250.30614"
+     inkscape:cy="-51.543091"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="-11"
@@ -34,7 +34,8 @@
      width="100"
      height="100"
      fill="#ffffff"
-     id="rect1" />
+     id="rect1"
+     style="fill:none;fill-opacity:1" />
   <!-- Electron Path (Lepton Beam) -->
   <circle
      cx="50"
@@ -121,6 +122,14 @@
   <!-- Arrowhead Marker Definition -->
   <defs
      id="defs7">
+    <linearGradient
+       id="swatch7"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+    </linearGradient>
     <marker
        id="arrowhead1"
        markerWidth="6"
