@@ -13,16 +13,33 @@ const TopMenu: React.FC = () => {
     const colorMode = useContext(ColorModeContext);
 
     return (
-        <AppBar position="static">
-            <Toolbar>
-                <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                    DIS Visualization
-                </Typography>
-                <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-                    {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-                </IconButton>
-            </Toolbar>
-        </AppBar>
+        <>
+            {/* AppBar */}
+            <AppBar position="static">
+                <Toolbar>
+                    <Typography variant="h6" sx={{ flexGrow: 1 }}>
+                        EIC DIS Visualization
+                    </Typography>
+                    <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+                        {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
+
+            {/* GitHub Badge */}
+            <div style={{
+                position: 'absolute',
+                top: '70px', /* Just below the AppBar */
+                right: '16px', /* Align it to the right */
+                zIndex: 1000, /* Make sure it appears above other content */
+            }}>
+                <a href="https://github.com/JeffersonLab/kinematics/">
+                    <img src="https://img.shields.io/badge/github-kinematics-blue?style=flat&logo=github"
+                         alt="GitHub"
+                         style={{ cursor: 'pointer' }} />
+                </a>
+            </div>
+        </>
     );
 };
 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- public/favicon.svg -->
+
+<svg
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.5520994"
+     inkscape:cx="-248.37327"
+     inkscape:cy="3.2214432"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <!-- Background -->
+  <rect
+     width="100"
+     height="100"
+     fill="#ffffff"
+     id="rect1" />
+  <!-- Electron Path (Lepton Beam) -->
+  <circle
+     cx="50"
+     cy="50"
+     r="40"
+     stroke="#1f77b4"
+     stroke-width="8"
+     fill="none"
+     id="circle1" />
+  <!-- Ion Path (Hadron Beam) -->
+  <circle
+     cx="50"
+     cy="50"
+     r="30"
+     stroke="#ff7f0e"
+     stroke-width="8"
+     fill="none"
+     transform="rotate(45 50 50)"
+     id="circle2" />
+  <!-- Hadron Beam Vector -->
+  <line
+     x1="80"
+     y1="50"
+     x2="60"
+     y2="50"
+     stroke="#ff7f0e"
+     stroke-width="3"
+     marker-end="url(#arrowhead1)"
+     id="line2" />
+  <!-- Lepton Beam Vector -->
+  <line
+     x1="10"
+     y1="50"
+     x2="40"
+     y2="50"
+     stroke="#1f77b4"
+     stroke-width="3"
+     marker-end="url(#arrowhead2)"
+     id="line3" />
+  <!-- Curly Particle (Outgoing at ~45°) -->
+  <path
+     d="m 50,50 c 5.941229,-4.826767 9.758022,-5.337615 15.476454,-20 M 49.965875,49.86536 C 51.451182,48.658668 62.558913,41.108569 59.738998,30.992219 58.319239,25.89888 51.846283,25.42909 47.730707,28.402867 41.514784,32.894286 41.254219,42.561784 47.605015,43.645306 54.737539,44.8622 58.193989,32.181977 51.509587,34.17404"
+     fill="none"
+     stroke="#9467bd"
+     stroke-width="2"
+     id="path3"
+     sodipodi:nodetypes="cccsssc" />
+  <path
+     d="m 50.117001,50.230076 c 6.550164,6.277201 9.480818,12.576845 8.147671,21.999566"
+     fill="none"
+     stroke="#9467bd"
+     stroke-width="2"
+     id="path3-4"
+     sodipodi:nodetypes="cc" />
+  <!-- Particle -->
+  <line
+     x1="50.06498"
+     y1="49.93502"
+     x2="30.740381"
+     y2="67.004608"
+     stroke="#9467bd"
+     stroke-width="1.81621"
+     id="line4" />
+  <!-- Particle -->
+  <line
+     x1="50"
+     y1="50"
+     x2="70"
+     y2="65"
+     stroke="#9467bd"
+     stroke-width="2"
+     id="line5" />
+  <!-- Particle -->
+  <line
+     x1="50.016758"
+     y1="50.003098"
+     x2="44.983242"
+     y2="72.580818"
+     stroke="#9467bd"
+     stroke-width="1.907"
+     id="line6" />
+  <!--    &lt;!&ndash; Curly Particle 2 (Outgoing at ~-45°) &ndash;&gt;-->
+  <!--    <path d="M50,50 Q40,60 30,70 T15,85" fill="none" stroke="#9467bd" stroke-width="2" />-->
+  <!-- Arrowhead Marker Definition -->
+  <defs
+     id="defs7">
+    <marker
+       id="arrowhead1"
+       markerWidth="6"
+       markerHeight="6"
+       refX="3"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M0,0 L6,3 L0,6 Z"
+         fill="#ff7f0e"
+         id="path6" />
+    </marker>
+    <marker
+       id="arrowhead2"
+       markerWidth="6"
+       markerHeight="6"
+       refX="3"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M0,0 L6,3 L0,6 Z"
+         fill="#1f77b4"
+         id="path7" />
+    </marker>
+  </defs>
+</svg>

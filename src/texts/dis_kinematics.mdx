@@ -1,0 +1,37 @@
+import DisScatteredElectron from '../components/DisScatteredElectron.tsx';
+
+# Deep Inelastic Scattering
+
+In DIS, the scattered electron angle $\theta$ is a crucial observable that depends on several variables:
+the Bjorken scaling variable $x$, the negative four-momentum transfer squared $Q^{2}$,
+and the energies of the electron $E_{e}$ and proton $E_{p}$ beams.
+
+This visualization shows how energy $x$ and $Q^{2}$ affects the scattering process.
+
+<DisScatteredElectron />
+
+The key variables are the Bjorken scaling variable $x$ and the four-momentum transfer squared $Q^{2}$.
+
+The relation between these variables is given by:
+
+$$
+Q^{2} = s x y
+$$
+
+where:
+
+- $Q^{2}$: The negative four-momentum transfer squared, defined as $Q^{2} = -q^{2}$, where $q$ is the four-momentum transfer between the electron and the proton.
+- $s$: The square of the center-of-mass energy.
+- $x$: The Bjorken scaling variable, representing the fraction of the proton's momentum carried by the struck quark.
+- $y$: The inelasticity parameter. It expresses the energy of the scattered electron in terms of the initial electron energy as $E'_{e} = E_{e} (1 - y)$
+
+The scattering angle $\theta$ is related to these variables by:
+
+$$
+\cos\theta = 1 - \frac{Q^{2}}{2 E_e^{2}\, \left(1 - \frac{Q^{2}}{4 x E_e E_p}\right)}
+$$
+
+Where $E_{e}$ the energy of the incident electron beam and $E_p$ of the proton (or ion) beam.
+
+
+

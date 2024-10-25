@@ -13,7 +13,7 @@ import {
 import { InlineMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
 
-const DisVisualization: React.FC = () => {
+const DisScatteredElectron: React.FC = () => {
     // State variables
     const [E_e, setE_e] = useState(18);
     const [E_p, setE_p] = useState(275);
@@ -82,12 +82,20 @@ const DisVisualization: React.FC = () => {
 
     // Convert Q2 to log scale for the slider
     const [logQ2, setLogQ2] = useState(Math.log10(Q2));
+    const [logBjorkenX, setLogBjorkenX] = useState(Math.log10(x));
 
-    const handleQ2Change = (_: unknown, newValue: number | number[]) => {
+    const handleQ2Change = (_: Event, newValue: number | number[]) => {
         const q2Value = Array.isArray(newValue) ? newValue[0] : newValue;
         setLogQ2(q2Value);
         setQ2(Math.pow(10, q2Value));
     };
+
+    const handleBjorkenXChange = (_: Event, newValue: number | number[]) => {
+        const xValue = Array.isArray(newValue) ? newValue[0] : newValue;
+        setLogBjorkenX(xValue);
+        setX(Math.pow(10, xValue));
+
+    }
 
     return (
         <Box sx={{ padding: 2 }}>
@@ -118,11 +126,11 @@ const DisVisualization: React.FC = () => {
                     Bjorken Scaling Variable <InlineMath math="x" />: {x.toFixed(4)}
                 </Typography>
                 <Slider
-                    value={x}
-                    min={0.0001}
-                    max={1}
+                    value={logBjorkenX}
+                    min={Math.log10(0.0001)}
+                    max={Math.log10(1)}
                     step={0.0001}
-                    onChange={(_, newValue) => setX(newValue as number)}
+                    onChange={handleBjorkenXChange}
                     sx={{ marginBottom: 2 }}
                 />
 
@@ -165,7 +173,7 @@ const DisVisualization: React.FC = () => {
                     alignItems: 'center',
                 }}
             >
-                <Stage width={500} height={400}>
+                <Stage width={500} height={250}>
                     <Layer>
                         {/* Proton Beam (Left to Right) */}
                         <Arrow
@@ -176,7 +184,7 @@ const DisVisualization: React.FC = () => {
                             stroke="red"
                             strokeWidth={5 * (E_p / 275) + 5} // Adjust width based on energy
                         />
-                        <Text text="Hadron" x={50} y={180} fill="red" />
+                        <Text text="Hadron" x={5} y={180} fill="red" />
 
                         {/* Electron Beam (Right to Left) */}
                         <Arrow
@@ -187,7 +195,7 @@ const DisVisualization: React.FC = () => {
                             stroke="blue"
                             strokeWidth={5 * (E_e / 18) + 1} // Adjust width based on energy
                         />
-                        <Text text="Electron Beam" x={450} y={180} fill="blue" />
+                        <Text text="Electron" x={450} y={180} fill="blue" />
 
                         {/* Collision Point */}
                         <Circle x={250} y={200} radius={3} fill="black" />
@@ -230,4 +238,4 @@ const DisVisualization: React.FC = () => {
     );
 };
 
-export default DisVisualization;
+export default DisScatteredElectron;
