@@ -27,13 +27,8 @@ const TopMenu: React.FC = () => {
             </AppBar>
 
             {/* GitHub Badge */}
-            <div style={{
-                position: 'absolute',
-                top: '70px', /* Just below the AppBar */
-                right: '16px', /* Align it to the right */
-                zIndex: 1000, /* Make sure it appears above other content */
-            }}>
-                <a href="https://github.com/JeffersonLab/kinematics/">
+            <div style={{ position: 'absolute', top: '70px', right: '16px', zIndex: 1000 }}>
+                <a href="https://github.com/JeffersonLab/kinematics/" target={'_blank'}>
                     <img src="https://img.shields.io/badge/github-kinematics-blue?style=flat&logo=github"
                          alt="GitHub"
                          style={{ cursor: 'pointer' }} />
