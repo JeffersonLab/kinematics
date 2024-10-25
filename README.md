@@ -1,18 +1,17 @@
-# EIC Interactive Kinematics visualization
-
-https://jeffersonlab.github.io/kinematics/
-
-
-https://github.com/JeffersonLab/kinematics
-
-
 # Interactive EIC Kinematics Visualization
 
 [![GitHub](https://img.shields.io/badge/github-kinematics-blue?style=flat&logo=github)](https://github.com/JeffersonLab/kinematics/)
 
-This project is an **interactive illustration** of kinematics in the Electron-Ion Collider (EIC), focusing on deep inelastic scattering (DIS) with scattered electron visualization. The application provides dynamic controls to adjust kinematic variables such as the electron and proton beam energies, the Bjorken scaling variable \(x\), and the four-momentum transfer squared \(Q^2\).
 
-Explore the interactive visualization directly at [JeffersonLab.github.io/kinematics](https://jeffersonlab.github.io/kinematics/).
+Explore the interactive visualization directly at:   
+
+&rArr; [JeffersonLab.github.io/kinematics](https://jeffersonlab.github.io/kinematics/) 	&lArr;
+
+
+
+This project is a demo of **interactive illustration** of kinematics in the Electron-Ion Collider (EIC), focusing on deep inelastic scattering (DIS) with scattered electron visualization. The application provides dynamic controls to adjust kinematic variables such as the electron and proton beam energies, the Bjorken scaling variable \(x\), and the four-momentum transfer squared \(Q^2\).
+
+[![DIS Kinematics](https://github.com/JeffersonLab/kinematics/blob/main/public/DisVisualization.gif?raw=true)](https://jeffersonlab.github.io/kinematics/)
 
 ## Features
 
